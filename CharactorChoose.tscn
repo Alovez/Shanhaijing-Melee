@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://CharactorChoose.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 220.311
+margin_top = 59.0552
+margin_right = 624.311
+margin_bottom = 315.055
+text = "Choose"
+
+[node name="XingTian" type="Button" parent="."]
+margin_left = 264.947
+margin_top = 355.474
+margin_right = 375.947
+margin_bottom = 407.474
+text = "Xingtian"
+
+[node name="None" type="Button" parent="."]
+margin_left = 466.316
+margin_top = 352.368
+margin_right = 586.316
+margin_bottom = 412.368
+text = "None"
+
+[node name="Next" type="Button" parent="."]
+margin_left = 803.159
+margin_top = 420.001
+margin_right = 915.159
+margin_bottom = 514.001
+text = "Next"
+[connection signal="button_up" from="XingTian" to="." method="_on_XingTian_button_up"]
+[connection signal="button_up" from="None" to="." method="_on_None_button_up"]
+[connection signal="button_up" from="Next" to="." method="_on_Next_button_up"]

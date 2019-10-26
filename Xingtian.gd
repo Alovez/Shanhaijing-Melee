@@ -68,3 +68,6 @@ func unblock_input():
 
 func shoot_remote():
 	emit_signal("shoot_remote", xingtian_remote)
+
+func _on_Area2D_body_entered(body):
+	print("Hitted")

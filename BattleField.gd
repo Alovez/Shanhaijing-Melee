@@ -12,7 +12,16 @@ var player1 = {}
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
-	player1.role = $Xingtian
+	var choosen_charactor = File.new()
+	choosen_charactor.open("user://choosen.save", File.READ)
+	var role = load(choosen_charactor.get_line())
+	var new_role = role.instance()
+	add_child(new_role)
+	new_role.position.y = 304
+	new_role.position.x = 240
+	new_role.scale.x = -0.4
+	new_role.scale.y = 0.4
+	player1.role = new_role
 	player1.role.connect("shoot_remote", self, "_on_player_shoot_remote")
 	player1.role.connect("input_shield", self, "_on_player_block_input")
 	player1.role.connect("open_input", self, "_on_player_unblock_input")

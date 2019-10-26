@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://BattleField.gd" type="Script" id=1]
 [ext_resource path="res://Assets/IMG_5959.PNG" type="Texture" id=2]
 [ext_resource path="res://Assets/IMG_5958.PNG" type="Texture" id=3]
 [ext_resource path="res://Assets/IMG_5957.PNG" type="Texture" id=4]
-[ext_resource path="res://Xingtian.tscn" type="PackedScene" id=5]
-[ext_resource path="res://IMG_5993.PNG" type="Texture" id=6]
+[ext_resource path="res://IMG_5993.PNG" type="Texture" id=5]
 
 [node name="Node2D" type="Node2D"]
 rotation = 0.00246731
@@ -32,15 +31,11 @@ position = Vector2( 158.063, 249.257 )
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 4 )
 
-[node name="Xingtian" parent="." instance=ExtResource( 5 )]
-position = Vector2( 240.487, 304.272 )
-scale = Vector2( -0.4, 0.4 )
-
 [node name="Awareness" type="Polygon2D" parent="."]
 position = Vector2( 390.971, -10.4306 )
 rotation = -3.14159
 scale = Vector2( 0.8, -0.8 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 polygon = PoolVector2Array( 76.2987, 112.013, 76.9481, 193.831, 473.701, 198.377, 471.753, 106.494 )
 uv = PoolVector2Array( 76.2987, 112.013, 76.9481, 193.831, 473.701, 198.377, 471.753, 106.494 )
 
@@ -54,7 +49,7 @@ color = Color( 1, 1, 1, 0.509804 )
 [node name="Energy" type="Polygon2D" parent="."]
 position = Vector2( 395.398, -3.68655 )
 scale = Vector2( -0.8, 0.8 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 polygon = PoolVector2Array( 91.8831, 19.1558, 93.1818, 87.3377, 485.065, 101.623, 481.169, 14.2857 )
 uv = PoolVector2Array( 91.8831, 19.1558, 93.1818, 87.3377, 485.065, 101.623, 481.169, 14.2857 )
 

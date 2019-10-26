@@ -286,7 +286,7 @@ tracks/21/keys = {
 position = Vector2( -1.28989, -0.644897 )
 
 [node name="hand_l" type="Sprite" parent="."]
-position = Vector2( 68.5688, -47.3038 )
+position = Vector2( 68.5688, -47.3043 )
 rotation = 0.018117
 texture = ExtResource( 1 )
 offset = Vector2( 17.9006, 65.7969 )
@@ -301,18 +301,20 @@ offset = Vector2( 4.58148, 30.3655 )
 [node name="leg_l" type="Sprite" parent="."]
 position = Vector2( 43.1629, 6.81519 )
 rotation = -0.404887
+scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 offset = Vector2( -20.3214, 48.4465 )
 
 [node name="shin_l" type="Sprite" parent="."]
 position = Vector2( 56.0984, 109.695 )
 rotation = -0.204834
+scale = Vector2( 1, 1 )
 texture = ExtResource( 4 )
 offset = Vector2( 18.8977, 47.7788 )
 
 [node name="foot_l" type="Sprite" parent="."]
 position = Vector2( 70.2153, 225.142 )
-rotation = 0.0285169
+rotation = 0.028517
 texture = ExtResource( 5 )
 offset = Vector2( 46.6058, 11.3198 )
 
