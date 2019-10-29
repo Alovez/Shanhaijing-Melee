@@ -7,13 +7,13 @@
 [ext_resource path="res://Assets/IMG_0152.PNG" type="Texture" id=5]
 [ext_resource path="res://Assets/IMG_5992.PNG" type="Texture" id=6]
 
-[sub_resource type="RectangleShape2D" id=75]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24.316, 24.7319 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 83.4337, 178.447 )
 
-[sub_resource type="ParticlesMaterial" id=2]
+[sub_resource type="ParticlesMaterial" id=3]
 flag_disable_z = true
 spread = 80.0
 gravity = Vector3( -98, 0, 0 )
@@ -24,7 +24,7 @@ orbit_velocity_random = 0.0
 scale = 0.8
 scale_random = 0.5
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip:position")
@@ -183,7 +183,7 @@ tracks/12/keys = {
 "values": [ 110.104, 117.775, 110.104 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest/arm_right/hand_right:rotation_degrees")
@@ -414,7 +414,7 @@ tracks/18/keys = {
 "values": [ Vector2( -183.75, -204.932 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/leg_right:rotation_degrees")
@@ -513,7 +513,7 @@ tracks/7/keys = {
 "values": [ 178.807, 102.745 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=7]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip:position")
@@ -662,7 +662,7 @@ tracks/11/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=8]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest/arm_left:rotation_degrees")
@@ -727,7 +727,7 @@ tracks/4/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=9]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip:rotation_degrees")
 tracks/0/interp = 1
@@ -923,7 +923,7 @@ tracks/15/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=10]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest/arm_right/hand_right:rotation_degrees")
@@ -1046,7 +1046,7 @@ tracks/9/keys = {
 "values": [ Vector2( -174.458, -198.387 ), Vector2( -34.3973, -282.119 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=11]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest/arm_right/hand_right:rotation_degrees")
 tracks/0/interp = 1
@@ -1252,7 +1252,7 @@ tracks/16/keys = {
 "values": [ 0.0, 0.0 ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=12]
 length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip:position")
@@ -1415,7 +1415,7 @@ tracks/12/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=13]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest/arm_left:rotation_degrees")
@@ -1494,7 +1494,7 @@ tracks/5/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=14]
 length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest:rotation_degrees")
@@ -1705,7 +1705,7 @@ tracks/16/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=15]
 length = 1.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/leg_left:rotation_degrees")
@@ -1852,7 +1852,7 @@ tracks/11/keys = {
 "values": [ 110.104, 105.054 ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=16]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip/chest/arm_left:rotation_degrees")
@@ -1903,7 +1903,7 @@ tracks/3/keys = {
 "values": [ 178.673, 100.429 ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=17]
 length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/hip:rotation_degrees")
@@ -2112,7 +2112,7 @@ tracks/16/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=18]
 length = 2.3
 loop = true
 tracks/0/type = "value"
@@ -2260,166 +2260,162 @@ tracks/11/keys = {
 "values": [ 105.054, 88.4138 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=18]
-animation = "Idle"
-
 [sub_resource type="AnimationNodeAnimation" id=19]
 animation = "Idle"
 
 [sub_resource type="AnimationNodeAnimation" id=20]
+animation = "Idle"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
 animation = "kick"
 
-[sub_resource type="AnimationNodeBlendTree" id=21]
+[sub_resource type="AnimationNodeBlendTree" id=22]
 graph_offset = Vector2( -359.933, 100.89 )
-nodes/Animation/node = SubResource( 20 )
+nodes/Animation/node = SubResource( 21 )
 nodes/Animation/position = Vector2( -130, 100 )
-"nodes/Animation 2/node" = SubResource( 19 )
+"nodes/Animation 2/node" = SubResource( 20 )
 "nodes/Animation 2/position" = Vector2( -130, 210 )
 node_connections = [ "output", 0, "Animation" ]
 
-[sub_resource type="AnimationNodeAnimation" id=22]
+[sub_resource type="AnimationNodeAnimation" id=23]
 animation = "Idle"
 
-[sub_resource type="AnimationNodeAnimation" id=23]
+[sub_resource type="AnimationNodeAnimation" id=24]
 animation = "post_kick"
 
-[sub_resource type="AnimationNodeBlendTree" id=24]
+[sub_resource type="AnimationNodeBlendTree" id=25]
 graph_offset = Vector2( -437.565, 74.5 )
-nodes/Animation/node = SubResource( 23 )
+nodes/Animation/node = SubResource( 24 )
 nodes/Animation/position = Vector2( -140, 150 )
-"nodes/Animation 2/node" = SubResource( 22 )
+"nodes/Animation 2/node" = SubResource( 23 )
 "nodes/Animation 2/position" = Vector2( -130, 270 )
 node_connections = [ "output", 0, "Animation" ]
 
-[sub_resource type="AnimationNodeAdd2" id=25]
-
-[sub_resource type="AnimationNodeAnimation" id=26]
-animation = "Idle"
+[sub_resource type="AnimationNodeAdd2" id=26]
 
 [sub_resource type="AnimationNodeAnimation" id=27]
+animation = "Idle"
+
+[sub_resource type="AnimationNodeAnimation" id=28]
 animation = "post_punch"
 
-[sub_resource type="AnimationNodeBlendTree" id=28]
+[sub_resource type="AnimationNodeBlendTree" id=29]
 graph_offset = Vector2( -366.99, 114.863 )
-nodes/Add2/node = SubResource( 25 )
+nodes/Add2/node = SubResource( 26 )
 nodes/Add2/position = Vector2( 111.395, 174.015 )
-nodes/Animation/node = SubResource( 27 )
+nodes/Animation/node = SubResource( 28 )
 nodes/Animation/position = Vector2( -90, 160 )
-"nodes/Animation 2/node" = SubResource( 26 )
+"nodes/Animation 2/node" = SubResource( 27 )
 "nodes/Animation 2/position" = Vector2( -90, 270 )
 node_connections = [ "output", 0, "Add2", "Add2", 0, "Animation", "Add2", 1, "Animation 2" ]
 
-[sub_resource type="AnimationNodeAnimation" id=29]
+[sub_resource type="AnimationNodeAnimation" id=30]
 animation = "post_remote"
 
-[sub_resource type="AnimationNodeAnimation" id=30]
+[sub_resource type="AnimationNodeAnimation" id=31]
 animation = "post_tired"
 
-[sub_resource type="AnimationNodeAnimation" id=31]
+[sub_resource type="AnimationNodeAnimation" id=32]
 animation = "Idle"
 
-[sub_resource type="AnimationNodeAnimation" id=32]
+[sub_resource type="AnimationNodeAnimation" id=33]
 animation = "walk"
 
-[sub_resource type="AnimationNodeBlend2" id=33]
+[sub_resource type="AnimationNodeBlend2" id=34]
 
-[sub_resource type="AnimationNodeBlendTree" id=34]
+[sub_resource type="AnimationNodeBlendTree" id=35]
 graph_offset = Vector2( -176.438, -85.8512 )
-nodes/Animation/node = SubResource( 32 )
+nodes/Animation/node = SubResource( 33 )
 nodes/Animation/position = Vector2( 90, 20 )
-"nodes/Animation 2/node" = SubResource( 31 )
+"nodes/Animation 2/node" = SubResource( 32 )
 "nodes/Animation 2/position" = Vector2( 70, 170 )
-nodes/Blend2/node = SubResource( 33 )
+nodes/Blend2/node = SubResource( 34 )
 nodes/Blend2/position = Vector2( 320, 60 )
 nodes/output/position = Vector2( 520, 110 )
 node_connections = [ "output", 0, "Blend2", "Blend2", 0, "Animation", "Blend2", 1, "Animation 2" ]
 
-[sub_resource type="AnimationNodeAnimation" id=35]
+[sub_resource type="AnimationNodeAnimation" id=36]
 animation = "pre_kick"
 
-[sub_resource type="AnimationNodeAnimation" id=36]
+[sub_resource type="AnimationNodeAnimation" id=37]
 animation = "pre_punch"
 
-[sub_resource type="AnimationNodeAnimation" id=37]
+[sub_resource type="AnimationNodeAnimation" id=38]
 animation = "Idle"
 
-[sub_resource type="AnimationNodeBlend2" id=38]
+[sub_resource type="AnimationNodeBlend2" id=39]
 
-[sub_resource type="AnimationNodeBlendTree" id=39]
+[sub_resource type="AnimationNodeBlendTree" id=40]
 graph_offset = Vector2( 49.015, 48.4425 )
-nodes/Animation/node = SubResource( 37 )
+nodes/Animation/node = SubResource( 38 )
 nodes/Animation/position = Vector2( 130, 180 )
-"nodes/Animation 2/node" = SubResource( 36 )
+"nodes/Animation 2/node" = SubResource( 37 )
 "nodes/Animation 2/position" = Vector2( 120, 70 )
-nodes/Blend2/node = SubResource( 38 )
+nodes/Blend2/node = SubResource( 39 )
 nodes/Blend2/position = Vector2( 310, 90 )
 nodes/output/position = Vector2( 490, 90 )
 node_connections = [ "output", 0, "Blend2", "Blend2", 0, "Animation 2", "Blend2", 1, "Animation" ]
 
-[sub_resource type="AnimationNodeAnimation" id=40]
+[sub_resource type="AnimationNodeAnimation" id=41]
 animation = "pre_remote"
 
-[sub_resource type="AnimationNodeAnimation" id=41]
+[sub_resource type="AnimationNodeAnimation" id=42]
 animation = "pre_walk"
 
-[sub_resource type="AnimationNodeBlendTree" id=42]
+[sub_resource type="AnimationNodeBlendTree" id=43]
 graph_offset = Vector2( -268.185, -12.72 )
-nodes/Animation/node = SubResource( 41 )
+nodes/Animation/node = SubResource( 42 )
 nodes/Animation/position = Vector2( -20, 120 )
 nodes/output/position = Vector2( 340, 130 )
 node_connections = [ "output", 0, "Animation" ]
 
-[sub_resource type="AnimationNodeAdd2" id=43]
-
-[sub_resource type="AnimationNodeAnimation" id=44]
-animation = "punch"
+[sub_resource type="AnimationNodeAdd2" id=44]
 
 [sub_resource type="AnimationNodeAnimation" id=45]
+animation = "punch"
+
+[sub_resource type="AnimationNodeAnimation" id=46]
 animation = "Idle"
 
-[sub_resource type="AnimationNodeBlendTree" id=46]
+[sub_resource type="AnimationNodeBlendTree" id=47]
 graph_offset = Vector2( -247.012, 65.6363 )
-nodes/Add2/node = SubResource( 43 )
+nodes/Add2/node = SubResource( 44 )
 nodes/Add2/position = Vector2( 130, 140 )
-nodes/Animation/node = SubResource( 45 )
+nodes/Animation/node = SubResource( 46 )
 nodes/Animation/position = Vector2( -110, 230 )
-"nodes/Animation 2/node" = SubResource( 44 )
+"nodes/Animation 2/node" = SubResource( 45 )
 "nodes/Animation 2/position" = Vector2( -110, 120 )
 node_connections = [ "output", 0, "Add2", "Add2", 0, "Animation 2", "Add2", 1, "Animation" ]
 
-[sub_resource type="AnimationNodeAnimation" id=47]
+[sub_resource type="AnimationNodeAnimation" id=48]
 animation = "remote"
 
-[sub_resource type="AnimationNodeAdd2" id=48]
-
-[sub_resource type="AnimationNodeAnimation" id=49]
-animation = "Tired"
+[sub_resource type="AnimationNodeAdd2" id=49]
 
 [sub_resource type="AnimationNodeAnimation" id=50]
+animation = "Tired"
+
+[sub_resource type="AnimationNodeAnimation" id=51]
 animation = "Idle"
 
-[sub_resource type="AnimationNodeBlendTree" id=51]
+[sub_resource type="AnimationNodeBlendTree" id=52]
 graph_offset = Vector2( -261.923, -246.681 )
-nodes/Add2/node = SubResource( 48 )
+nodes/Add2/node = SubResource( 49 )
 nodes/Add2/position = Vector2( 200, 110 )
-nodes/Animation/node = SubResource( 50 )
+nodes/Animation/node = SubResource( 51 )
 nodes/Animation/position = Vector2( -10, 90 )
-"nodes/Animation 2/node" = SubResource( 49 )
+"nodes/Animation 2/node" = SubResource( 50 )
 "nodes/Animation 2/position" = Vector2( 0, 220 )
 nodes/output/position = Vector2( 430, 140 )
 node_connections = [ "output", 0, "Add2", "Add2", 0, "Animation", "Add2", 1, "Animation 2" ]
 
-[sub_resource type="AnimationNodeAnimation" id=52]
+[sub_resource type="AnimationNodeAnimation" id=53]
 animation = "walk"
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=53]
-
 [sub_resource type="AnimationNodeStateMachineTransition" id=54]
-switch_mode = 2
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=55]
 switch_mode = 2
-auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=56]
 switch_mode = 2
@@ -2434,16 +2430,16 @@ switch_mode = 2
 auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=59]
+switch_mode = 2
+auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=60]
-switch_mode = 2
-auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=61]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=62]
 switch_mode = 2
 auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=62]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=63]
 switch_mode = 2
@@ -2454,72 +2450,75 @@ switch_mode = 2
 auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=65]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=66]
 switch_mode = 2
 auto_advance = true
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=66]
+
 [sub_resource type="AnimationNodeStateMachineTransition" id=67]
-switch_mode = 1
+switch_mode = 2
+auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=68]
 switch_mode = 1
-auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=69]
 switch_mode = 1
+auto_advance = true
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=70]
 switch_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=71]
+switch_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=72]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=73]
 switch_mode = 2
 auto_advance = true
 
-[sub_resource type="AnimationNodeStateMachine" id=73]
-states/Idle/node = SubResource( 18 )
+[sub_resource type="AnimationNodeStateMachine" id=74]
+states/Idle/node = SubResource( 19 )
 states/Idle/position = Vector2( 156, 95.9764 )
-states/kick/node = SubResource( 21 )
+states/kick/node = SubResource( 22 )
 states/kick/position = Vector2( 645.375, 192.25 )
-states/post_kick/node = SubResource( 24 )
+states/post_kick/node = SubResource( 25 )
 states/post_kick/position = Vector2( 445.211, 254 )
-states/post_punch/node = SubResource( 28 )
+states/post_punch/node = SubResource( 29 )
 states/post_punch/position = Vector2( 445.181, 120.5 )
-states/post_remote/node = SubResource( 29 )
+states/post_remote/node = SubResource( 30 )
 states/post_remote/position = Vector2( 445.196, 374 )
-states/post_tired/node = SubResource( 30 )
+states/post_tired/node = SubResource( 31 )
 states/post_tired/position = Vector2( 56.5, 278.484 )
-"states/post_walk 2/node" = SubResource( 34 )
+"states/post_walk 2/node" = SubResource( 35 )
 "states/post_walk 2/position" = Vector2( 390.226, 562.408 )
-states/pre_kick/node = SubResource( 35 )
+states/pre_kick/node = SubResource( 36 )
 states/pre_kick/position = Vector2( 445.196, 183.5 )
-states/pre_punch/node = SubResource( 39 )
+states/pre_punch/node = SubResource( 40 )
 states/pre_punch/position = Vector2( 445.241, 56.9822 )
-states/pre_remote/node = SubResource( 40 )
+states/pre_remote/node = SubResource( 41 )
 states/pre_remote/position = Vector2( 445.226, 309.25 )
-states/pre_walk/node = SubResource( 42 )
+states/pre_walk/node = SubResource( 43 )
 states/pre_walk/position = Vector2( 445.226, 474.25 )
-states/punch/node = SubResource( 46 )
+states/punch/node = SubResource( 47 )
 states/punch/position = Vector2( 645, 55.8791 )
-states/remote/node = SubResource( 47 )
+states/remote/node = SubResource( 48 )
 states/remote/position = Vector2( 646.438, 307 )
-states/tired/node = SubResource( 51 )
+states/tired/node = SubResource( 52 )
 states/tired/position = Vector2( 169, 496.984 )
-states/walk/node = SubResource( 52 )
+states/walk/node = SubResource( 53 )
 states/walk/position = Vector2( 645.188, 474.031 )
-transitions = [ "Idle", "pre_punch", SubResource( 53 ), "pre_punch", "punch", SubResource( 54 ), "punch", "post_punch", SubResource( 55 ), "post_punch", "Idle", SubResource( 56 ), "kick", "post_kick", SubResource( 57 ), "post_kick", "Idle", SubResource( 58 ), "Idle", "pre_kick", SubResource( 59 ), "pre_kick", "kick", SubResource( 60 ), "Idle", "pre_remote", SubResource( 61 ), "pre_remote", "remote", SubResource( 62 ), "remote", "post_remote", SubResource( 63 ), "post_remote", "Idle", SubResource( 64 ), "Idle", "pre_walk", SubResource( 65 ), "pre_walk", "walk", SubResource( 66 ), "walk", "post_walk 2", SubResource( 67 ), "post_walk 2", "Idle", SubResource( 68 ), "pre_walk", "post_walk 2", SubResource( 69 ), "Idle", "tired", SubResource( 70 ), "tired", "post_tired", SubResource( 71 ), "post_tired", "Idle", SubResource( 72 ) ]
+transitions = [ "Idle", "pre_punch", SubResource( 54 ), "pre_punch", "punch", SubResource( 55 ), "punch", "post_punch", SubResource( 56 ), "post_punch", "Idle", SubResource( 57 ), "kick", "post_kick", SubResource( 58 ), "post_kick", "Idle", SubResource( 59 ), "Idle", "pre_kick", SubResource( 60 ), "pre_kick", "kick", SubResource( 61 ), "Idle", "pre_remote", SubResource( 62 ), "pre_remote", "remote", SubResource( 63 ), "remote", "post_remote", SubResource( 64 ), "post_remote", "Idle", SubResource( 65 ), "Idle", "pre_walk", SubResource( 66 ), "pre_walk", "walk", SubResource( 67 ), "walk", "post_walk 2", SubResource( 68 ), "post_walk 2", "Idle", SubResource( 69 ), "pre_walk", "post_walk 2", SubResource( 70 ), "Idle", "tired", SubResource( 71 ), "tired", "post_tired", SubResource( 72 ), "post_tired", "Idle", SubResource( 73 ) ]
 graph_offset = Vector2( -138.666, 168.612 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=74]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=75]
 
 [node name="Xingtian" type="Node2D"]
 position = Vector2( 218.458, -2.08719 )
 script = ExtResource( 1 )
 
 [node name="polygon" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="arm_right" type="Polygon2D" parent="polygon"]
 position = Vector2( 92.2438, -7.73656 )
@@ -2628,7 +2627,7 @@ default_length = 100.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Skeleton2D/hip/chest/arm_right/hand_right/Area2D"]
 position = Vector2( 117.578, 3.98178 )
 rotation = -0.698209
-shape = SubResource( 75 )
+shape = SubResource( 1 )
 
 [node name="eye_left" type="Bone2D" parent="Skeleton2D/hip/chest"]
 position = Vector2( 8.58557, -144.419 )
@@ -2650,7 +2649,7 @@ rest = Transform2D( 0.989785, -0.142566, 0.142566, 0.989785, -34.7538, -30.4661 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Skeleton2D/hip/chest/Area2D"]
 position = Vector2( -4.79498, -43.0532 )
 rotation = -0.140918
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="leg_left" type="Bone2D" parent="Skeleton2D/hip"]
 position = Vector2( 56.806, 28.2462 )
@@ -2695,36 +2694,36 @@ rest = Transform2D( -0.98525, 0.171121, -0.171121, -0.98525, -27.4817, 59.8918 )
 default_length = 50.0
 
 [node name="Particles2D" type="Particles2D" parent="Skeleton2D/hip"]
-position = Vector2( -183.75, -204.932 )
+position = Vector2( -35.2678, -280.552 )
 rotation = -1.71396
 amount = 7
 lifetime = 1.5
 randomness = 0.36
-process_material = SubResource( 2 )
+process_material = SubResource( 3 )
 texture = ExtResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Idle = SubResource( 3 )
-anims/Tired = SubResource( 4 )
-anims/kick = SubResource( 5 )
-anims/post_kick = SubResource( 6 )
-anims/post_punch = SubResource( 7 )
-anims/post_remote = SubResource( 8 )
-anims/post_tired = SubResource( 9 )
-anims/post_walk = SubResource( 10 )
-anims/pre_kick = SubResource( 11 )
-anims/pre_punch = SubResource( 12 )
-anims/pre_remote = SubResource( 13 )
-anims/pre_walk = SubResource( 14 )
-anims/punch = SubResource( 15 )
-anims/remote = SubResource( 16 )
-anims/walk = SubResource( 17 )
+anims/Idle = SubResource( 4 )
+anims/Tired = SubResource( 5 )
+anims/kick = SubResource( 6 )
+anims/post_kick = SubResource( 7 )
+anims/post_punch = SubResource( 8 )
+anims/post_remote = SubResource( 9 )
+anims/post_tired = SubResource( 10 )
+anims/post_walk = SubResource( 11 )
+anims/pre_kick = SubResource( 12 )
+anims/pre_punch = SubResource( 13 )
+anims/pre_remote = SubResource( 14 )
+anims/pre_walk = SubResource( 15 )
+anims/punch = SubResource( 16 )
+anims/remote = SubResource( 17 )
+anims/walk = SubResource( 18 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 73 )
+tree_root = SubResource( 74 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/playback = SubResource( 74 )
+parameters/playback = SubResource( 75 )
 parameters/post_punch/Add2/add_amount = 0
 "parameters/post_walk 2/Blend2/blend_amount" = 0
 parameters/pre_punch/Blend2/blend_amount = 0.5
@@ -2737,4 +2736,4 @@ rotation = -0.00183936
 
 [node name="Position2D2" type="Position2D" parent="."]
 position = Vector2( 383.919, 590.374 )
-[connection signal="body_entered" from="Skeleton2D/hip/chest/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="area_shape_entered" from="Skeleton2D/hip/chest/Area2D" to="." method="_on_Area2D_area_shape_entered"]

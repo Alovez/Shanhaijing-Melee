@@ -8,19 +8,44 @@ var right = false
 var action = false
 var screen_size
 var player1 = {}
+var player2 = {}
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
+	load_player()
+	load_enemy()
+	
+
+func load_enemy():
+	var choosen_charactor = File.new()
+	choosen_charactor.open("user://enemy.save", File.READ)
+	var enemy = load(choosen_charactor.get_line())
+	var new_role = enemy.instance()
+	$"EnemyLayer".add_child(new_role)
+#	add_child(new_role)
+	new_role.position.y = 300
+	new_role.position.x = 747
+	new_role.scale.x = 0.4
+	new_role.scale.y = 0.4
+	player2.role = new_role
+	player2.remote = []
+	
+
+func load_player():
 	var choosen_charactor = File.new()
 	choosen_charactor.open("user://choosen.save", File.READ)
 	var role = load(choosen_charactor.get_line())
 	var new_role = role.instance()
-	add_child(new_role)
-	new_role.position.y = 304
-	new_role.position.x = 240
+	$"PlayerLayer".add_child(new_role)
+#	add_child(new_role)
+	new_role.position.y = 300
+	new_role.position.x = 220
 	new_role.scale.x = -0.4
 	new_role.scale.y = 0.4
+	new_role.is_player = true
+	new_role.name = 'player'
 	player1.role = new_role
 	player1.role.connect("shoot_remote", self, "_on_player_shoot_remote")
 	player1.role.connect("input_shield", self, "_on_player_block_input")
@@ -40,7 +65,7 @@ func _process(delta):
 			player1.role.position.x -= 2
 		if right and not action:
 			player1.role.position.x += 2
-	$"Energy/Mask".rect_size.x = 374 - 369.0 / 100.0 * player1.role.enegry
+	$"PlayerLayer/Energy/Mask".rect_size.x = 374 - 369.0 / 100.0 * player1.role.enegry
 	
 	
 func _input(event):

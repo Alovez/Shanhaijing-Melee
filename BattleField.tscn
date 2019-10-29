@@ -10,52 +10,64 @@
 rotation = 0.00246731
 script = ExtResource( 1 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -59.2071
-margin_top = -28.806
+[node name="Background" type="ColorRect" parent="."]
+editor/display_folded = true
+margin_left = -59.204
+margin_top = -27.5403
 margin_right = 1140.79
-margin_bottom = 771.194
+margin_bottom = 772.46
 
-[node name="IMG_5959" type="Sprite" parent="."]
-position = Vector2( 845.493, 355.702 )
+[node name="IMG_5959" type="Sprite" parent="Background"]
+position = Vector2( 904.697, 383.242 )
+rotation = 1.66308e-10
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 2 )
 
-[node name="IMG_5958" type="Sprite" parent="."]
-position = Vector2( 365.579, 274.29 )
+[node name="IMG_5958" type="Sprite" parent="Background"]
+position = Vector2( 424.783, 301.83 )
+rotation = 1.66308e-10
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 3 )
 
-[node name="IMG_5957" type="Sprite" parent="."]
-position = Vector2( 158.063, 249.257 )
+[node name="IMG_5957" type="Sprite" parent="Background"]
+position = Vector2( 217.267, 276.797 )
+rotation = 1.66308e-10
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 4 )
 
-[node name="Awareness" type="Polygon2D" parent="."]
+[node name="PlayerLayer" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Awareness" type="Polygon2D" parent="PlayerLayer"]
+editor/display_folded = true
 position = Vector2( 390.971, -10.4306 )
-rotation = -3.14159
+rotation = 3.14159
 scale = Vector2( 0.8, -0.8 )
 texture = ExtResource( 5 )
 polygon = PoolVector2Array( 76.2987, 112.013, 76.9481, 193.831, 473.701, 198.377, 471.753, 106.494 )
 uv = PoolVector2Array( 76.2987, 112.013, 76.9481, 193.831, 473.701, 198.377, 471.753, 106.494 )
 
-[node name="Mask" type="ColorRect" parent="Awareness"]
+[node name="Mask" type="ColorRect" parent="PlayerLayer/Awareness"]
 margin_left = 82.4808
 margin_top = 117.718
 margin_right = 456.481
 margin_bottom = 197.718
 color = Color( 1, 1, 1, 0.509804 )
 
-[node name="Energy" type="Polygon2D" parent="."]
+[node name="Energy" type="Polygon2D" parent="PlayerLayer"]
+editor/display_folded = true
 position = Vector2( 395.398, -3.68655 )
-scale = Vector2( -0.8, 0.8 )
+rotation = -3.14159
+scale = Vector2( 0.8, -0.8 )
 texture = ExtResource( 5 )
 polygon = PoolVector2Array( 91.8831, 19.1558, 93.1818, 87.3377, 485.065, 101.623, 481.169, 14.2857 )
 uv = PoolVector2Array( 91.8831, 19.1558, 93.1818, 87.3377, 485.065, 101.623, 481.169, 14.2857 )
 
-[node name="Mask" type="ColorRect" parent="Energy"]
+[node name="Mask" type="ColorRect" parent="PlayerLayer/Energy"]
 margin_left = 98.0
 margin_top = 16.714
 margin_right = 103.0
 margin_bottom = 96.714
 color = Color( 1, 1, 1, 0.521569 )
+
+[node name="EnemyLayer" type="Node2D" parent="."]

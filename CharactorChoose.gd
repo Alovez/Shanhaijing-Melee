@@ -30,3 +30,10 @@ func _on_None_button_up():
 	choosen_charactor.open("user://choosen.save", File.WRITE)
 	choosen_charactor.store_line("")
 	choosen_charactor.close()
+
+
+func _on_enemy_button_up():
+	var choosen_charactor = File.new()
+	choosen_charactor.open("user://enemy.save", File.WRITE)
+	choosen_charactor.store_line("res://Xingtian.tscn")
+	choosen_charactor.close()

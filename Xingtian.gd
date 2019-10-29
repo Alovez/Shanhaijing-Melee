@@ -14,6 +14,7 @@ var awareness = 0
 var awareness_modulus = 0.5
 var stop = false
 var tired = false
+var is_player = false
 
 
 func _ready():
@@ -39,11 +40,11 @@ func _physics_process(delta):
 		playback.travel('post_tired')
 		tired = false
 		stop = tired
-	if not tired and Input.is_action_pressed("ui_right") and not Input.is_action_pressed("punch") and not Input.is_action_pressed("kick") and not Input.is_action_pressed("remote"):
+	if is_player and not tired and Input.is_action_pressed("ui_right") and not Input.is_action_pressed("punch") and not Input.is_action_pressed("kick") and not Input.is_action_pressed("remote"):
 		playback.travel('walk')
 	
 func _input(event):
-	if not tired:
+	if not tired and is_player:
 		if event is InputEventKey and event.pressed:
 			if event.scancode == KEY_Z:
 				playback.travel('punch')
@@ -69,5 +70,5 @@ func unblock_input():
 func shoot_remote():
 	emit_signal("shoot_remote", xingtian_remote)
 
-func _on_Area2D_body_entered(body):
-	print("Hitted")
+func _on_Area2D_area_shape_entered(area_id, area, area_shape, self_shape):
+	print("hitted")
